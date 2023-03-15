@@ -1,2 +1,2 @@
 void print();
-int64_t factorial(int n);
+int factorial(int n);

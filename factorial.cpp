@@ -1,11 +1,12 @@
 #include <iostream>
 #include "myfunctions.hpp"
 
-int64_t factorial(int n)
+int factorial(int n)
 {
     if (n != 1)
     {
-        return n * factorial(n - 1);
+        int y{factorial(n - 1)};
+        return n * y;
     }
     
     else
