@@ -1,0 +1,60 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "semaphore": "cpp",
+        "span": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "thread": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "makefile.clearOutputBeforeBuild": false,
+    "makefile.ignoreDirectoryCommands": false,
+    "makefile.launchConfigurations": [
+
+        {
+            "cwd": "c:\\Users\\MIKE EMEKA\\Documents\\C++",
+            "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\main",
+            "binaryArgs": [],
+            "stopAtEntry": true,
+            "MIMode": "gdb",
+            "symbolSearchPath": ""
+        }
+    ],
+    
+}
+

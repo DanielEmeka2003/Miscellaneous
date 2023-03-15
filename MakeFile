@@ -1,0 +1,38 @@
+
+# .PHONY used to indicate a certain target is not a file
+.PHONY = clean
+# various marcos or variables
+INCULDES = -I
+CXX = g++
+CXXFLAGS = -g -ggdb -O2 -DNDEBUG -std=c++20 -Wall -Wextra -Wsign-conversion -Werror
+OBJ = main.o hello.o factorial.o
+CPPFILES = main.cpp hello.cpp factorial.cpp
+LIBS = -l
+# you can use the del or erase keyword
+RM = -del
+
+all: main
+
+main: $(OBJ)	
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) $(OBJ) -o main
+
+test: 
+	./main
+
+main.o: main.cpp myfunctions.hpp
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c main.cpp 
+
+hello.o: hello.cpp myfunctions.hpp
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c hello.cpp 
+
+factorial.o: factorial.cpp myfunctions.hpp
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c factorial.cpp 
+
+.cpp.o:
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c *.cpp
+
+.cpp:
+	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -o $@.cpp *.o 
+
+clean:
+	$(RM) *.o main.exe
