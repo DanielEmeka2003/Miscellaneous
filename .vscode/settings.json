@@ -45,7 +45,6 @@
     "makefile.clearOutputBeforeBuild": false,
     "makefile.ignoreDirectoryCommands": false,
     "makefile.launchConfigurations": [
-
         {
             "cwd": "c:\\Users\\MIKE EMEKA\\Documents\\C++",
             "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\main",
@@ -53,6 +52,12 @@
             "stopAtEntry": true,
             "MIMode": "gdb",
             "symbolSearchPath": ""
+        },
+        {
+            "cwd": "c:\\Users\\MIKE EMEKA\\Documents\\C++",
+            "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\practice",
+            "binaryArgs": [],
+            "stopAtEntry": true,
         }
     ],
     

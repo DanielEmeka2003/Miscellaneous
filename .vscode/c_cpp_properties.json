@@ -20,7 +20,7 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
-                    "${workspaceFolder}/Game/include/SDL2"
+                    
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }

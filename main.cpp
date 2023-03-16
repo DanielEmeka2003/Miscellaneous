@@ -3,8 +3,9 @@
 
 int main()
 {
-    print();
+    print(); 
     int fact{factorial(4)};
     std::cout << fact;
+   [[maybe_unused]] int under{};
     return 0;
 }
