@@ -38,28 +38,35 @@
         "thread": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "bit": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "unordered_map": "cpp",
+        "functional": "cpp",
+        "iomanip": "cpp",
+        "numeric": "cpp",
+        "utility": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled",
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.default.cStandard": "c23",
+    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "C_Cpp.experimentalFeatures": "enabled",
     "makefile.clearOutputBeforeBuild": false,
     "makefile.ignoreDirectoryCommands": false,
     "makefile.launchConfigurations": [
         {
             "cwd": "c:\\Users\\MIKE EMEKA\\Documents\\C++",
-            "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\main",
+            "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\main.exe",
             "binaryArgs": [],
-            "stopAtEntry": true,
-            "MIMode": "gdb",
-            "symbolSearchPath": ""
-        },
-        {
-            "cwd": "c:\\Users\\MIKE EMEKA\\Documents\\C++",
-            "binaryPath": "c:\\Users\\MIKE EMEKA\\Documents\\C++\\practice",
-            "binaryArgs": [],
-            "stopAtEntry": true,
+            "stopAtEntry": true
         }
     ],
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
+    "C_Cpp.intelliSenseEngine": "default",
+    
     
 }
 

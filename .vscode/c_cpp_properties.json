@@ -3,8 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:\\Users\\MIKE EMEKA\\Documents\\C++/**",
-                "c:\\Users\\MIKE EMEKA\\Documents\\C++\\Game/include/SDL2"
+                "c:\\Users\\MIKE EMEKA\\Documents\\C++/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,15 +11,14 @@
                 "_UNICODE"
             ],
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-            "cStandard": "c17",
-            "cppStandard": "gnu++20",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "windows-gcc-x86",
             "configurationProvider": "ms-vscode.makefile-tools",
             "mergeConfigurations": false,
             "browse": {
                 "path": [
-                    "${workspaceFolder}/**",
-                    
+                    "${workspaceFolder}/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
@@ -36,8 +34,8 @@
                 "_UNICODE"
             ],
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-            "cStandard": "c17",
-            "cppStandard": "gnu++20",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "windows-clang-arm"
         }
     ],

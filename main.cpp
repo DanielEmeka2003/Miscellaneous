@@ -1,11 +1,14 @@
-#include <iostream>
-#include "myfunctions.hpp"
+#include "functions.hpp"
 
-int main()
+
+int main() 
 {
-    print(); 
-    int fact{factorial(4)};
-    std::cout << fact;
-   [[maybe_unused]] int under{};
+    
+    
+    std::cout << std::numbers::pi << '\n'; 
+    auto str{"This is a string"s};
+    std::cout << str.starts_with("name"); 
+    
+    
     return 0;
 }

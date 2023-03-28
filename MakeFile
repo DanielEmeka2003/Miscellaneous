@@ -1,38 +1,35 @@
-
 # .PHONY used to indicate a certain target is not a file
-.PHONY = clean
 # various marcos or variables
 INCULDES = -I
-CXX = g++
-CXXFLAGS = -g -ggdb -O2 -DNDEBUG -std=c++20 -Wall -Wextra -Wsign-conversion -Werror
-OBJ = main.o hello.o factorial.o
-CPPFILES = main.cpp hello.cpp factorial.cpp
 LIBS = -l
+CXX = g++
+CXXFLAGS = -g -ggdb -std=c++23 -Wall -Wextra -Wsign-conversion -Werror -Wshadow
+OBJ = main.o NumericInput.o practice.o
+HPP = functions.hpp includes.hpp constants.hpp
 # you can use the del or erase keyword
 RM = -del
 
-all: main
+all: main.exe
 
-main: $(OBJ)	
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) $(OBJ) -o main
+main.exe: $(OBJ)	
+	$(CXX) $(CXXFLAGS) $(OBJ) -o main
 
-test: 
-	./main
+main.o: main.cpp $(HPP)
+	$(CXX) $(CXXFLAGS) -c main.cpp 
 
-main.o: main.cpp myfunctions.hpp
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c main.cpp 
+NumericInput.o: NumericInput.cpp $(HPP)
+	$(CXX) $(CXXFLAGS) -c NumericInput.cpp 
 
-hello.o: hello.cpp myfunctions.hpp
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c hello.cpp 
-
-factorial.o: factorial.cpp myfunctions.hpp
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c factorial.cpp 
+practice.o: practice.cpp $(HPP)
+	$(CXX) $(CXXFLAGS) -c practice.cpp 
 
 .cpp.o:
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -c *.cpp
+	$(CXX) $(CXXFLAGS) -c *.cpp
 
 .cpp:
-	$(CXX) $(INCULDES) $(LIBS) $(CXXFLAGS) -o $@.cpp *.o 
+	$(CXX) $(CXXFLAGS) -o $@.cpp *.o
+
+.PHONY : clean
 
 clean:
 	$(RM) *.o main.exe
