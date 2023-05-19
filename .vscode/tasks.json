@@ -15,6 +15,7 @@
                 "-Wsign-conversion",
                 "-Werror",
                 "-Wshadow",
+                "-Wenum-compare",
                 "-std=c++23",
                 "${file}", 
                 "-o",

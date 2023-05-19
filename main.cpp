@@ -1,14 +1,24 @@
-#include "functions.hpp"
+#include "functions.h"
+#include "Random.h"
+#include "customTypes.h"
+#include "miscellany.h"
+#include "squareGame.h"
+#include "fPuzzleGame.h"
+#include "guessGame.h"
+#include "logicGame.h"
 
 
-int main() 
+int main( [[maybe_unused]] int argc, [[maybe_unused]] char* argv[] ) 
 {
+                           
     
     
-    std::cout << std::numbers::pi << '\n'; 
-    auto str{"This is a string"s};
-    std::cout << str.starts_with("name"); 
+
     
     
+    
+
+
     return 0;
 }
+

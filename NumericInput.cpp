@@ -1,7 +1,7 @@
-#include "functions.hpp"
+#include "functions.h"
 
 
-namespace input
+namespace numeric
 {
     void ignoreInputBuffer()
     {
@@ -10,10 +10,10 @@ namespace input
 
 } // namespace input
 
-namespace input::numbers
+namespace numeric::numbers
 {
 
-    bool NumericInputValidation(std::string_view errorMessage)
+    bool NumericInputValidation(std::string_view errorMessage) 
     {
         bool flag{false};
         if (std::cin.fail())
@@ -26,8 +26,31 @@ namespace input::numbers
         return flag;
     }
     
-    double getInputs(std::string_view FirstInputMessage, std::string_view SecondInputMessage)
+    double getInputs_s(std::string_view InputMessage)
     {
+        double x{};
+        
+        while (true)
+        {
+            std::cout << InputMessage;
+            std::cin >> x;
+            ignoreInputBuffer();
+            if (NumericInputValidation())
+            std::cout << '\n';
+            else
+            {
+                std::cout << '\n';
+                return x;
+            }
+        } 
+        
+    }
+    
+    double getInputs_d()
+    {
+        std::string_view FirstInputMessage {"Enter a number: "}; 
+        std::string_view SecondInputMessage {"Enter another: "};
+        
         double x{};
         static int count{};
         ++count;
@@ -66,5 +89,5 @@ namespace input::numbers
             } 
         }
     }
-    
-} // namespace input::numbers
+
+} // namespace numeric::numbers

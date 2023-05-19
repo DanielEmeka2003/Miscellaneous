@@ -1,4 +1,4 @@
-#include "functions.hpp"
+#include "functions.h"
 
      
 namespace practice
@@ -11,7 +11,7 @@ namespace practice
         {
             std::cout << "Enter any of these operators +, -, *, /: ";
             std::cin >> x;
-            input::ignoreInputBuffer(); 
+            numeric::ignoreInputBuffer(); 
             switch (x)
             {
                 case '+':
@@ -49,7 +49,7 @@ namespace practice
                 break;
         }
     }
-
+    
     void calculateHeightOfTheBall(double height)
     {
         
@@ -73,18 +73,32 @@ namespace practice
     {
         bool flag{};
 
-        if (integer % 2 == 0)
-        {
-            std::cout << integer;
-            flag = true;
-        }
+        if (integer % 2 == 0) flag = true;
+        else flag = false;
+        
+        return flag;
+    }
+
+    bool isPrime(int number)
+    {
+        bool flag{true};
+        
+        if(number == 0 || number == 1) flag = true;
 
         else
         {
-            std::cout << integer;
-            flag = false;
+            for (int i = 2; i < number; ++i)
+            {
+                if(number % i == 0)
+                {
+                    flag = false;
+                    break;
+                }
+                else flag = true;
+            }
+            
         }
-
+        
         return flag;
     }
 } // namespace practice

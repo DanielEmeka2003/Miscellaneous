@@ -3,29 +3,6 @@
         {
             "name": "Win32",
             "includePath": [
-                "c:\\Users\\MIKE EMEKA\\Documents\\C++/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-            "cStandard": "c23",
-            "cppStandard": "c++23",
-            "intelliSenseMode": "windows-gcc-x86",
-            "configurationProvider": "ms-vscode.makefile-tools",
-            "mergeConfigurations": false,
-            "browse": {
-                "path": [
-                    "${workspaceFolder}/**"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
-        },
-        {
-            "name": "GCC",
-            "includePath": [
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -36,7 +13,7 @@
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
             "cStandard": "c23",
             "cppStandard": "c++23",
-            "intelliSenseMode": "windows-clang-arm"
+            "intelliSenseMode": "windows-gcc-x86"
         }
     ],
     "version": 4

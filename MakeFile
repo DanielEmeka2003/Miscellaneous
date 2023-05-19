@@ -2,32 +2,46 @@
 # various marcos or variables
 INCULDES = -I
 LIBS = -l
-CXX = g++
-CXXFLAGS = -g -ggdb -std=c++23 -Wall -Wextra -Wsign-conversion -Werror -Wshadow
-OBJ = main.o NumericInput.o practice.o
-HPP = functions.hpp includes.hpp constants.hpp
+C = g++
+CFLAGS = -g -ggdb -std=c++23 -Wall -Wextra -Wsign-conversion -Werror -Wshadow -Wenum-compare
+O = main.o NumericInput.o practice.o text.o miscellany.o customTypes.o guessGame.o
+H = functions.h constants.h
 # you can use the del or erase keyword
 RM = -del
 
 all: main.exe
 
-main.exe: $(OBJ)	
-	$(CXX) $(CXXFLAGS) $(OBJ) -o main
+main.exe: $(O)	
+	$(C) $(CFLAGS) -o main $(O)
 
-main.o: main.cpp $(HPP)
-	$(CXX) $(CXXFLAGS) -c main.cpp 
+main.o: main.cpp $(H) Random.h customTypes.h miscellany.h 
+	$(C) $(CFLAGS) -c main.cpp 
 
-NumericInput.o: NumericInput.cpp $(HPP)
-	$(CXX) $(CXXFLAGS) -c NumericInput.cpp 
+NumericInput.o: NumericInput.cpp $(H)
+	$(C) $(CFLAGS) -c NumericInput.cpp
 
-practice.o: practice.cpp $(HPP)
-	$(CXX) $(CXXFLAGS) -c practice.cpp 
+practice.o: practice.cpp $(H)
+	$(C) $(CFLAGS) -c practice.cpp 
+text.o: text.cpp $(H)
+	$(C) $(CFLAGS) -c text.cpp 
 
-.cpp.o:
-	$(CXX) $(CXXFLAGS) -c *.cpp
+miscellany.o: miscellany.cpp  miscellany.h customTypes.h $(H)
+	$(C) $(CFLAGS) -c miscellany.cpp 
+
+customTypes.o: customTypes.cpp customTypes.h includes.h Random.h
+	$(C) $(CXXFLAGS) -c customTypes.cpp 
+
+guessGame.o: guessGame.cpp guessGame.h Random.hpp $(H) 
+	$(C) $(CFLAGS) -c guessGame.cpp 
+
+.cpp.o: 
+	$(C) $(CFLAGS) -c *.cpp
 
 .cpp:
-	$(CXX) $(CXXFLAGS) -o $@.cpp *.o
+	$(C) $(CFLAGS) -o main *.cpp
+
+subsystem:
+	cd game && $(MAKE)
 
 .PHONY : clean
 
