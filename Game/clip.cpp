@@ -105,9 +105,10 @@ int main( [[maybe_unused]] int argc,  [[maybe_unused]]char* argv[]){
                 {
                     y -= amount;
                 }
-                   
+                
                 SDL_SetRenderDrawColor(rend_surface, 255, 255, 255, 255); 
                 SDL_RenderClear(rend_surface);
+
                 #if 0
                 SDL_SetRenderDrawColor(rend_surface, 0, 0, 0, 255);                        
                 //Triangle    
@@ -145,13 +146,15 @@ int main( [[maybe_unused]] int argc,  [[maybe_unused]]char* argv[]){
 				}
                 #endif
                 spriteSheet.render(x, y, &any);              
-                   
                 SDL_RenderPresent(rend_surface); 
             }
             
         
         }
+
     }        
     close();
+    system("pause");
     return 0;
 }
+                

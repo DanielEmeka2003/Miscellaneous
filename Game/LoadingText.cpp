@@ -27,7 +27,8 @@ bool LoadingText::loadImage(string path){
     else
     {
         SDL_SetColorKey(loadsurface, SDL_TRUE, SDL_MapRGB(loadsurface->format, 255, 255, 255));
-        new_texture = SDL_CreateTextureFromSurface(rend_surface, loadsurface);
+        SDL_Renderer** ptr{&rend_surface};
+        new_texture = SDL_CreateTextureFromSurface(*ptr, loadsurface);
         if (!new_texture)
         {
             cout << "Unable to load textue image! SDL_Error: " << SDL_GetError() << endl;

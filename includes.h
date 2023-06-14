@@ -26,7 +26,11 @@
 #include <numeric>
 #include <map>
 #include <initializer_list>
-
+#include <memory>
+#include <sstream>
+#include <cctype>
+#include <fstream>
+#include <filesystem>
 
 
 #endif // INCLUDES_H

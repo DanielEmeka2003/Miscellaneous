@@ -4,7 +4,7 @@
 #pragma once
 
 #include "guessGame.h"
-#include "functions.h"
+#include "gfunctions.h"
 #include "customTypes.h"
 #include "Random.h"
 

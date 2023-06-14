@@ -1,7 +1,7 @@
 #if !defined(SQAUREGAME_H)
 #define SQAUREGAME_H
 
-#include "functions.h"
+#include "gfunctions.h"
 #include "Random.h"
 #include "guessGame.h"
 

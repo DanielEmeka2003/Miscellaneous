@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "functions.h"
+#include "gfunctions.h"
 #include "Random.h"
 
 namespace guess

@@ -56,7 +56,11 @@
         "random": "cpp",
         "cinttypes": "cpp",
         "cstring": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "optional": "cpp",
+        "ranges": "cpp",
+        "codecvt": "cpp",
+        "fstream": "cpp"
     },
     
     "makefile.clearOutputBeforeBuild": false,

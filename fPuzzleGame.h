@@ -4,7 +4,7 @@
 
 #include "guessGame.h"
 #include "customTypes.h"
-#include "functions.h"
+#include "gfunctions.h"
 
 namespace fiftheenPuzzle
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "C:\Users\MIKE EMEKA\Documents\C++\includes.hpp"
+#include "C:\Users\MIKE EMEKA\Documents\C++\includes.h"
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>

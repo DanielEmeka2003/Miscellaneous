@@ -35,7 +35,7 @@ namespace squareGame
         int ssize{std::ssize(C)};
         for (int i{0}; i < ssize; ++i)
         {
-            int guess{ (int) numeric::numbers::getInputs_s("> ")};
+            int guess{ (int) numeric::numbers::getInput("> ")};
             std::vector<int>::iterator find{std::find(C.begin(), C.end(), guess)};
             if (guess == *find)
             {
@@ -75,8 +75,8 @@ namespace squareGame
         char userChoice{};
         do
         {
-            int startE{ (int) numeric::numbers::getInputs_s("Start where? ")};    
-            int vectorSize{ (int) numeric::numbers::getInputs_s("How many? ")};    
+            int startE{ (int) numeric::numbers::getInput("Start where? ")};    
+            int vectorSize{ (int) numeric::numbers::getInput("How many? ")};    
     
             std::vector<int> vGame( (size_t) vectorSize);
     

@@ -77,7 +77,7 @@ namespace fiftheenPuzzle
         solved.fill();
         board.fill().randomize();
 
-        std::string_view userName{text::getInputs("Enter your name: ")};
+        std::string_view userName{text::getStringInput("Enter your name: ")};
         Introduction(userName);
         std::cout << "\nPuzzle\n";
         std::cout << solved << '\n';

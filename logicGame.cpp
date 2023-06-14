@@ -60,7 +60,7 @@ namespace logicGame
         char exit_choice{};
         do
         {
-            Player p{static_cast<std::string>(text::getInputs("Enter your name: "))};
+            Player p{static_cast<std::string>(text::getStringInput("Enter your name: "))};
             introduction(p.getName());
             Monster rm{};
 
