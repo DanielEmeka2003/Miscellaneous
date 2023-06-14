@@ -1,3 +1,10 @@
 ECHO is on.
+
 # ignore all .txt files
 *.txt
+
+# ignore all .exe files
+*.exe
+
+# ignore all .o files
+*.o
